@@ -1,0 +1,5 @@
+<ul class="menu">
+{% for item in root_items %}
+    {% include 'menu/menu_item.html' with item=item active_path=active_path %}
+{% endfor %}
+</ul>

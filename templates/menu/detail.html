@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% load menu_tags %}
+
+{% block content %}
+<h1>{{ menu.name }}</h1>
+<p>{{ menu.description }}</p>
+{% draw_menu menu %}
+{% endblock %}

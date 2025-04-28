@@ -1,0 +1,24 @@
+<li>
+    <span class="menu-item">
+        {% if item.get_children|length %}
+            {% if item.id in active_path %}
+                <span class="arrow">▼</span>
+            {% else %}
+                <span class="arrow">▶</span>
+            {% endif %}
+        {% endif %}
+
+        <a href="{{ item.url }}"
+           {% if item.id in active_path %}class="active"{% endif %}>
+            {{ item.title }}
+        </a>
+    </span>
+
+    {% if item.id in active_path and item.get_children %}
+        <ul>
+            {% for child in item.get_children %}
+                {% include 'menu/menu_item.html' with item=child active_path=active_path %}
+            {% endfor %}
+        </ul>
+    {% endif %}
+</li>

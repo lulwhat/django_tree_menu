@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load menu_tags %}
+
+{% block content %}
+<h1>Menu factory</h1>
+
+{% for menu in menus %}
+<div class="menu-container">
+    <h2 class="menu-title">
+        <a href="{{ menu.url }}">{{ menu.name }}</a>
+    </h2>
+    {% if menu.description %}<h4>{{ menu.description }}</h4>{% endif %}
+</div>
+{% endfor %}
+{% endblock %}
