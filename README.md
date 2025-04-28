@@ -5,7 +5,7 @@ Runs on *Python 3.12.2*
 
 Uses *Django 5.2*, *SQLite 3.41.2*
 
-All requirements are listed in [requirements.txt](/app/requirements.txt)
+All requirements are listed in [requirements.txt](/requirements.txt)
 
 DB is prepopulated with test data
 
