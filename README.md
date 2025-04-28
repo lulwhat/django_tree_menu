@@ -15,18 +15,17 @@ Task description for the API: [task_description.docx](/task_description.docx)
 
 **To use locally run following steps:**
 
-**Download project and cd into it**
+1. Download project and cd into it
+2. Run:
 
-**Activate venv:**
-1. `python -m venv venv`
-2. `.\venv\Scripts\activate` (for Windows)
-`source ./venv/bin/activate` (for Linux)
-3. `pip install -r requirements.txt`
++ **For Linux:**
+`chmod +x setup.sh && ./setup.sh`
 
-**Start application:** `python manage.py runserver`
++ **For Windows:**
+`.\setup.bat`
 
-**Open menus in browser:** `http://127.0.0.1:8000/`
+3. Open in browser:
++ For Menus `http://127.0.0.1:8000/`
++ For admin panel `http://127.0.0.1:8000/admin/` (login: admin password: admin)
 
-**Admin panel to manage application**: `http://127.0.0.1:8000/admin/` (login: admin password: admin):
-
-**Shutdown:** `Ctrl+C`
+4. Shutdown: `Ctrl+C`
